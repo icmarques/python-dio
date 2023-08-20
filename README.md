@@ -1,2 +1,2 @@
-# primeiro-programa
+# python
 Estudos de python

@@ -20,14 +20,17 @@
     
 # Módulo
     #print(10 % 3)
-    #>>>> 1
+    #>>>> 1 (resto da divisao)
 
 # Exponenciação
     #print(2 ** 3)
     #>>>> 8
     
-#min 02:25h
-    
+#Ordem de resolução
+    #parenteses
+    #Expoentes
+    #Multiplicações e divisões (da esquerda para a direita)
+    #Somas e subtrações (da esquerda para a direita)
 
     
 

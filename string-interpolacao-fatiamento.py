@@ -22,3 +22,5 @@ nome[:]
 
 nome[::-1]
 #>>>> "ohlavraC ed ruhtrA emrehliuG"
+
+

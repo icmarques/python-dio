@@ -2,26 +2,17 @@ import sys
 #a = int(sys.stdin.readline())
 #print(a)
 
-# T = int(input("Tweet:"))
+twitter = input("Escreva seu tweet aqui: " )
+qtd_caracteres = len(twitter)
+#print(qtd_caracteres)
 
-# if T <= int(140):
-#     verificacao = (str("TWEET"))
-#     verificacao_2 = 0
-#     print(verificacao)
-  
-# else:
-#     verificacao_2 = (str("MUTE"))
-#     verificacao = 0
-#     print(verificacao_2)
+variavel_1 = "TWEET"
+variavel_2 = "MUTE"
 
-T = input()
-print(T)
-
-len(T)
-
-if len(T) <= (140):
-    print("TWEET")
+if qtd_caracteres <= 140:
+    print(variavel_1)
     
 else:
-    print("MUTE")
+    print(variavel_2)
+    
 

@@ -9,7 +9,7 @@
 
 saldo = 0
 limite = 500
-extrato = 
+extrato = 1500
 numero_saques = 3
 
 while true:

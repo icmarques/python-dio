@@ -1,22 +1,42 @@
 import sys
 
 month = input()
-months_dict = list(mes_, mes_1, mes_2, mes_3, mes_4, mes_5, mes_6, mes_7, mes_8, mes_9, mes_10, mes_11, mes_12)
+selecao_mes = int(month)
+months_dict = ["mes_", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-mes_1 = "January"
-mes_2 = "February"
-mes_3 = "March"
-mes_4 = "April"
-mes_5 = "May"
-mes_6 = "June"
-mes_7 = "July"
-mes_8 = "August"
-mes_9 = "September"
-mes_10 = "October"
-mes_11 = "November"
-mes_12 = "December"
-
-if month == 1:
-    print(months_dict(range()))
-
-
+if selecao_mes == 1:
+    print(str(months_dict[1]))
+    
+elif selecao_mes == 2:
+    print(str(months_dict[2]))
+    
+elif selecao_mes == 3:
+    print(str(months_dict[3]))
+    
+elif selecao_mes == 4:
+    print(str(months_dict[4]))
+    
+elif selecao_mes == 5:
+    print(str(months_dict[5]))
+    
+elif selecao_mes == 6:
+    print(str(months_dict[6]))
+    
+elif selecao_mes == 7:
+    print(str(months_dict[7]))
+    
+elif selecao_mes == 8:
+    print(str(months_dict[8]))
+    
+elif selecao_mes == 9:
+    print(str(months_dict[9]))
+    
+elif selecao_mes == 10:
+    print(str(months_dict[10]))
+    
+elif selecao_mes == 11:
+    print(str(months_dict[11]))
+    
+    
+elif selecao_mes == 12:
+    print(str(months_dict[12]))

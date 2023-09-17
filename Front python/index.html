@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora saldo bancário</title>
+</head>
+<body>
+    <header>
+        <fieldset text-align:center style="background-color: rgb(195, 193, 205)""><h1>Conta Corrente</h1></fieldset>
+</header>
+<main>
+    <div>
+        <h2>Saldo atual: R$1.500,00</h2>
+        <p>Qual o tipo de operação que será feita?</p>
+    </div>
+    <fieldset>
+        <legend><strong>Tipo de operação</strong></legend>
+    <div display:block>
+        <label for="operacao"><em>Digite aqui a operação desejada: </em></label>
+        <input type="text" placeholder="Depósito ou Saque" id="operacao">
+        <button style="background-color:rgb(195, 193, 205)">Enviar</button>
+    </div>
+    </fieldset>
+    <br>
+    <div>
+        <h3>Você selecionou a seguinte operação: <a style="background-color: rgb(195, 193, 205)">Depósito</a></h3>
+        <p>Agora, informe o valor da operação: </p>
+    </div>
+    <fieldset>
+        <legend>Valor da operação</legend>
+    <div display:block>
+        <label for="valor"><em>Digite o valor da operação: </em></label>
+        <input type="text" placeholder="Valor em R$" id="valor">
+        <button style="background-color:rgb(195, 193, 205)">Enviar</button>
+    </div>
+    </fieldset>
+
+    <div display:block>
+        <h3>Você informou o seguinte valor: <a style="background-color: rgb(195, 193, 205)">R$500,00</a></h3>
+        <h3><a style="background-color:rgb(195, 193, 205)">Seu saldo atual é <strong>R$2.000,00.</strong></p>
+    </div>
+</main>
+</body>
+</html>

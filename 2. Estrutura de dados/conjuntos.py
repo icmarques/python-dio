@@ -49,33 +49,3 @@ for indice, carro in enumerate(carros):
     print(f"{indice}: {carro}")
     
     
-# Métodos da classe do set
-
-#{}.union
-#Une os dois conjuntos
-
-conjunto_a = {1, 2}
-conjunto_b = {3, 4}
-
-conjunto_a.union(conjunto_b) #{1, 2, 3, 4}
-
-
-#{}.intersection
-#traz somente os elementos que constam em ambos os conjuntos
-
-conjunto_a = {1, 2, 3}
-conjunto_b = {2, 3, 4}
-
-conjunto_a.intersection(conjunto_b) #{2, 3}
-
-
-#{}.difference
-#traz o elemento que existe somente no conjunto comparado
-
-conjunto_a = {1, 2, 3}
-conjunto_b = {2, 3, 4}
-
-conjunto_a.difference(conjunto_b) #{1}
-conjunto_a.difference(conjunto_a) #{4}
-
-

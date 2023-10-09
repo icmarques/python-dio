@@ -38,7 +38,7 @@ print(lista)
 
 
 #[].count
-#é utilizado para contar quantas vezes um determnado objeto aparece dentro da lista
+#é utilizado para contar quantas vezes um determinado objeto aparece dentro da lista
 
 cores = [1, 2, 3, 2]
 

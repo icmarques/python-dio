@@ -56,3 +56,29 @@ retorna_antecessor_e_sucessor(10) #(9,11)
 # Objetos de primeira classe
 #Em python tudo é objeto, dessa forma funções também são objeto o que as tornam objetos de primeira classe. 
 #Com isso, pode-se atribuir funções a variaveis, passá-ldas como parâmetro para funções, usá-ldas como valores em estruturas de dados(listas, tuplas, dicionários, etc) e usar como valor de retorno para uma função (closures).
+
+def somar (a,b):
+    return a + b
+
+def exibir_resultado(a, b, funcao):
+    resultado = funcao(a, b)
+    print(f"O resultado da operação {a} + {b} = {resultado}")
+    
+exibir_resultado(10, 10, somar) #O resultado da operação 10 + 10 = 20
+
+
+# Escopo local e escopo global
+#Python trabalha com o escopo local e global, dentro do bloco da função escopo é local. 
+#Portanto, alterações ali feitas em objetos imutáveis serão perdidas quando o método terminar de ser executado.
+#Para usar objetos globais utilizamos a palavra-chave global, que informa ao interpretador que a variável que está sendo manipulada no escopo local é global.
+#Essa NÃO é uma boa prática e deve ser evitada.
+
+salario = 2000
+
+def salario_bonus(bonus)
+    global salario
+    salario += bonus
+    return salario
+
+salario_com_bonus = salario_bonus(500) #2500
+print(salario_com_bonus)

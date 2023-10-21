@@ -1,22 +1,15 @@
 import sys
-import count
-
 n = int(input())
 
-
-while (n > 0):
-    A, B = input("Informe A e B, separado por um espaço: ").split();
-    break
+while(n>0):
+    A, B = input("").split()
+    n = n -1
     
-if count(A) >= len(b):
-
-        if (a[(len(a) - len(b)):]) == b:
-
-            print("encaixa")
-
-        else:
-
-            print("nao encaixa")
+    if A[-len(B):].find(B) != -1:
+        print("encaixa")
+    
+    else:
+        print("não encaixa")
 
 
 

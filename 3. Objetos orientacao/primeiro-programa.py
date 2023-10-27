@@ -23,6 +23,11 @@ class Bicicleta:
     def correr (self):
         print("Vruuuummm...")
         
+    #def __str__(self):
+        #return f"Bicicleta: cor={self.cor}, modelo={self.modelo}, ano={self.ano}, valor={self.valor}"
+        
+    #def __str__(self):
+    #  return f"{self.__class__.__name__}" #traz o nome da classe
             
 b1 = Bicicleta("azul", "BMX", 2005, 500)
 b2 = Bicicleta("vermelho", "caloi", 2010, 300)
@@ -31,8 +36,11 @@ b1.buzinar()
 b1.parar()   
 b1.correr()
 
-print(b1.cor, b1.modelo, b1.ano, b1.valor) #serve para demonstrar os atributos. 
+print(b1.cor, b1.modelo, b1.ano, b1.valor) #serve para acessar os atributos. 
 
 
-b2.buzinar()
+Bicicleta.buzinar(b2) #é equivalente a b2.buzinar()
+
 print(b2.cor, b2.modelo, b2.ano, b2.valor)
+
+print(b2.cor)

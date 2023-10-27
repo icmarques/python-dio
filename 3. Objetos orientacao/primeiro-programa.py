@@ -1,32 +1,38 @@
 #PRIMEIRO PROGRAMA
     
-    #João tem uma bicicletaria e gostaria de registrar as vendas de suas bicicletas.
-    #Crie um programa onde João informe: cor, modelo, ano e valor da bicicleta vendida.
-    #Uma bicicleta pode: buzinar, parar e correr. Adicione esses comportamentos.
+#João tem uma bicicletaria e gostaria de registrar as vendas de suas bicicletas.
+#Crie um programa onde João informe: cor, modelo, ano e valor da bicicleta vendida.
+#Uma bicicleta pode: buzinar, parar e correr. Adicione esses comportamentos.
     
-class _init_(self, cor, modelo, ano, valor, correr=True):
-    self.cor = cor
-    self.modelo = modelo
-    self.ano = ano
-    self.valor = valor
+class Bicicleta:
+
+    def __init__(self, cor, modelo, ano, valor):  #self representa a instancia do proprio objeto. Sempre colocar.
+        self.cor = cor
+        self.modelo = modelo
+        self.ano = ano
+        self.valor = valor
         
     def buzinar (self):
-        print("Bi bi bi")
+        print("Plim Plim")
             
     def parar (self):
-        self.correr=False
+        print("Parando bicicleta...")
         print("Bicicleta parada")
+        
+        
+    def correr (self):
+        print("Vruuuummm...")
+        
             
-bicicleta_1 = Bicicleta("azul", "BMX", 2005, "R$500,00", True)
-bicicleta_2 = Bicicleta("vermelha", "Caloi", 2010, "R$250,00", False)
-bicicleta_3 = Bicicleta("branca", "Monark", 2009, "R$1.500,00", True)
+b1 = Bicicleta("azul", "BMX", 2005, 500)
+b2 = Bicicleta("vermelho", "caloi", 2010, 300)
     
-bicicleta_3.buzinar()
-print(bicicleta_3.buzinar)
-    
-bicicleta_2.parar()
-print(bicicleta_2.parar)
-    
-bicicleta_1.correr()
-print(bicicleta_1.correr)
+b1.buzinar()
+b1.parar()   
+b1.correr()
 
+print(b1.cor, b1.modelo, b1.ano, b1.valor) #serve para demonstrar os atributos. 
+
+
+b2.buzinar()
+print(b2.cor, b2.modelo, b2.ano, b2.valor)

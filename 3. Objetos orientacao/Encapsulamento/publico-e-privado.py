@@ -7,7 +7,7 @@ Recurso privado é aquele que só se altera dentro da classe ou do método.
 Exemplo:
     class Conta:
     def __init__(self, saldo=0)
-        self._saldo = saldo
+        self._saldo = saldo #o underline convenciona que este só pode ser alterado dentro da classe
         
     def despositar (self, valor):
         pass
